@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Central Hub</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/suzuki.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ddd;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .overlay {
+      max-width: 1100px;
+      margin: 40px auto;
+      /* Semi-transparent black background */
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.9);
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #ddd;
+    }
+
+    header.center-header {
+      text-align: center;
+      border-bottom: 3px solid #f0c419;
+      padding-bottom: 20px;
+      margin-bottom: 35px;
+      position: relative;
+    }
+    .center-logo {
+      width: 90px;
+      height: auto;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 4px #f0c419);
+    }
+    .site-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #f0c419;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    nav.nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 45px;
+      flex-wrap: wrap;
+    }
+    nav.nav-bar a {
+      color: #f0c419;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: 2px solid #f0c419;
+      box-shadow: inset 0 1px 4px rgba(255, 241, 118, 0.4);
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.4s ease;
+    }
+    nav.nav-bar a:hover {
+      background-color: #fff176;
+      color: #222;
+      box-shadow: 0 0 12px #fff176;
+    }
+
+    main.intro {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .content-box {
+      background-color: #222; /* Solid dark grey - opaque */
+      padding: 40px 35px;
+      border-radius: 18px;
+      box-shadow: 0 6px 30px rgba(240, 196, 25, 0.7);
+      max-width: 600px;
+      width: 100%;
+      color: #fff176;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+    }
+    .content-box h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 8px #fff176;
+    }
+    .content-box p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      color: #ddd;
+      text-shadow: 0 0 6px rgba(0,0,0,0.6);
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #f0c419;
+      color: #222;
+      text-decoration: none;
+      padding: 15px 45px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(240, 196, 25, 0.8);
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.4s ease;
+    }
+    .cta-button:hover {
+      background-color: #fff176;
+      color: #111;
+      box-shadow: 0 12px 35px rgba(255, 241, 118, 0.95);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: rgba(0,0,0,0.8);
+      color: #bbb;
+      font-size: 0.9rem;
+      border-top: 2px solid #f0c419;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      user-select: none;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header class="center-header">
+      <img src="images/logo.png" alt="Car Logo" class="center-logo" />
+      <h1 class="site-title">Car Central Hub</h1>
+    </header>
+
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="pages/view_cars.php">View Cars</a>
+      <a href="pages/login.php">Login</a>
+      <a href="pages/register.php">Register</a>
+      <a href="php/logout.php">Logout</a>
+    </nav>
+
+    <main class="intro">
+      <div class="content-box fade-in">
+        <h2>Drive Your Dream Car</h2>
+        <p>Quick, affordable, and premium rentals.</p>
+        <a href="pages/view_cars.php" class="cta-button">Book Now</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Car Rental System | All rights reserved | Designed by Noor</p>
+    </footer>
+  </div>
+</body>
+</html>

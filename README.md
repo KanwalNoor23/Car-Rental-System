@@ -30,21 +30,7 @@ The system includes the following main components:
 
 ---
 
-## 📂 How to Set Up and Run the Project
 
-1. 🔧 **Install XAMPP** from [https://www.apachefriends.org](https://www.apachefriends.org)
-2. 📁 **Place the project folder** inside:  
-   `C:\xampp\htdocs\car-rental-system`
-3. 🧠 **Import the database**:
-   - Open `http://localhost/phpmyadmin`
-   - Create a new database (e.g., `car_rental`)
-   - Import `db.sql` file to create the required tables
-4. ▶️ **Run the project**:
-   - Start Apache and MySQL from the XAMPP control panel
-   - Open your browser and go to:  
-     `http://localhost/car-rental-system/index.html`
-
----
 
 ## 🧩 Features
 
